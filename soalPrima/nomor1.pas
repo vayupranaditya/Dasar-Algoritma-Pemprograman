@@ -29,12 +29,25 @@ begin
 
 end;
 
-var n:integer;
+var a,b,i:integer;
 
 begin
   clrscr;
-  write('masukan nilai n : ');readln(n);
-  write(CheckPrime(n));
+  write('masukan nilai a : ');readln(a);
+  write('masukan nilai b : ');readln(b);
+  while(a < b) do
+            begin
+            writeln('nilai harus a > b');
+            write('masukan nilai a : ');readln(a);
+            write('masukan nilai b : ');readln(b);
+            end;
+  write('bilangan prima antara a ke b : ');
+  for i := a downto b do
+      begin
+      if(CheckPrime(i)) then
+           write(i,' ');
+      end;
+  writeln;
   readkey;
 end.
 
