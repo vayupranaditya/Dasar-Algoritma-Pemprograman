@@ -64,6 +64,11 @@ begin
       res_t := res_h div 365;
       res_h := res_h mod 365;
       res_b := hari2bulan(res_h);
+      if(res_b = 12) then
+                      begin
+                      res_t := res_t + 1;
+                      res_b := 0;
+                      end;
       writeln('usia anda pada hari ini (3/10/2017) adalah : ',res_t,' tahun ',res_b,' bulan ',res_h,' hari.');
 end;
 
