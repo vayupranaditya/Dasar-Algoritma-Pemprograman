@@ -52,6 +52,8 @@ begin
      cur_t := 2017;
      if(cur_h < h) then
                      begin
+                     if( b = cur_b) then
+                                     cur_b := cur_b - 1;
                      cur_h := cur_h + 31;
                      cur_b := cur_b - 1;
                      end;
@@ -80,4 +82,4 @@ begin
   HitungUsia(tahun,bulan,tanggal);
   readkey;
 end.
-                                           +
+
