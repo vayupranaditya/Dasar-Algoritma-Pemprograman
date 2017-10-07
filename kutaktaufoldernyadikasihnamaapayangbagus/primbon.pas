@@ -7,7 +7,7 @@ function GetHari(bulan : integer) : integer;
 
 begin
     if(bulan = 2) then
-                    GetHari := 2
+                    GetHari := 28
                else
                    if((bulan <= 6) and (bulan mod 2 = 1))or
                    ((bulan > 6) and (bulan mod 2 = 0))
